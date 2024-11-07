@@ -27,7 +27,7 @@ subMenuTitles.forEach((title) => {
 
 function logout() {
     alert("You have been logged out.");  
-    window.location.href = "../Wireframe.html"; 
+    window.location.href = "../index.html"; 
 }
 
 /*----------------adding popup form -------------*/
