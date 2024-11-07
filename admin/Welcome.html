@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Admin Dashboard </title>
+    <link rel="stylesheet" href="Wireframe.css" />
+    <!-- Boxicons CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    
+</head>
+<body>
+    <nav class="sidebar">
+        <img src="5.png" alt="Logo">
+
+        <div class="menu-content">
+            <ul class="menu-items">
+                <li class="item">
+                    <a href="#">
+                        <i class='bx bxs-dashboard icon'></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="item">
+                    <div class="submenu-item">
+                        <span>
+                            <i class='bx bxs-user icon'></i>
+                            Users
+                        </span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="menu-items submenu">
+                        <div class="menu-title">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            Users Options
+                        </div>
+                        <li class="item">
+                            <a href="#">
+                                <i class='bx bxs-plus-circle icon'></i>
+                                Add Users
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <i class='bx bxs-user icon'></i>
+                                View Users
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item">
+                    <div class="submenu-item">
+                        <span>
+                            <i class='bx bxs-file icon'></i>
+                            Reports
+                        </span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="menu-items submenu">
+                        <div class="menu-title">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            Report Options
+                        </div>
+                        <li class="item">
+                            <a href="#">
+                                <i class='bx bxs-report icon'></i>
+                                Daily Reports
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <i class='bx bxs-report icon'></i>
+                                Monthly Reports
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <i class='bx bxs-report icon'></i>
+                                Meter Reports
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item">
+                    <a href="#">
+                        <i class='bx bxs-cog icon'></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" onclick="logout()">
+                        <i class='bx bxs-log-out icon'></i>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar">
+        <i class="fa-solid fa-bars" id="sidebar-close"></i>
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search..." />
+            <button onclick="performSearch()">Search</button>
+        </div>
+    </nav>
+    
+      
+   
+
+    <!-----------body Section----------->
+
+    <main class="main">
+        
+            <!-- Hidden Form to Add New Entry -->
+            <div class="container">
+                <h2>Ncc Organization</h2>
+                <button class="add-new-btn">+ Add New</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Plant Name</th>
+                            <th>Organization Name</th>
+                            <th>Basic Analysis</th>
+                            <th>Advanced Analysis</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>KellerPlant-2</td>
+                            <td>Keller</td>
+                            <td><button class="enable-btn">Enable</button></td>
+                            <td><button class="enable-btn">Enable</button></td>
+                            <td class="status active">Active</td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>KellerPlant-3</td>
+                            <td>Keller</td>
+                            <td><button class="enable-btn">Enable</button></td>
+                            <td><button class="enable-btn">Enable</button></td>
+                            <td class="status active">Active</td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <!-- Additional rows can be added here -->
+                    </tbody>
+                </table>
+            </div>
+        
+       
+        
+
+        
+       
+   
+
+    </main>
+    <!-----------Add new organization------------->
+    <script src="Wireframe.js"></script>
+</body>
+
+</html>
